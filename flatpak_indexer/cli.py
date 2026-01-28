@@ -28,7 +28,7 @@ def cli(ctx, config_file, verbose):
     FORMAT = "%(asctime)s:%(levelname)s:%(name)s:%(message)s"
     logging.basicConfig(level=logging.WARNING, format=FORMAT)
     if verbose:
-        logging.getLogger("flatpak_indexer").setLevel(logging.INFO)
+        logging.getLogger("flatpak_indexer").setLevel(logging.DEBUG)
 
 
 @cli.command(name="daemon")
